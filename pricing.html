@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - EduAI Learning Platform</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">✨ EduAI</a>
+                <div class="flex gap-8 items-center nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="exams.html" class="nav-link">AI Exams</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link active">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="user.html" class="nav-link">Profile</a>
+                    <button class="btn-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                </div>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="page-hero page-hero-pricing px-8 py-16 text-white">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="hero-tag">Flexible plans for learners and instructors</p>
+                    <h1 class="text-5xl font-bold mb-6 leading-tight">Premium pricing built for growth and real-world results</h1>
+                    <p class="hero-subtitle">Choose the perfect plan to accelerate your learning path, unlock mentorship, and gain certified skills with AI-driven guidance.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="hero-btn">Start Free Trial</button>
+                        <button class="hero-btn-secondary">Compare Plans</button>
+                    </div>
+                </div>
+                <div class="pricing-banner">
+                    <p class="font-semibold text-cyan-100 mb-3">Save more with annual billing</p>
+                    <p class="text-4xl font-bold">30% off compared to monthly pricing</p>
+                    <p class="pricing-banner-copy">Annual plans are the best value for serious learners — unlock all courses, live sessions, and certifications for one low price.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="px-8 py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Free Plan -->
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold mb-3">Student</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$0<span class="text-lg text-gray-600">/forever</span></p>
+                        <p class="text-gray-600 mb-8">Perfect for exploring and building foundational skills</p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ 50+ Essential Courses</div>
+                            <div class="price-feature">✓ Basic AI Tutor (5 queries/day)</div>
+                            <div class="price-feature">✓ Community Forum Access</div>
+                            <div class="price-feature">✓ Basic Progress Tracking</div>
+                            <div class="price-feature">✗ Live Sessions</div>
+                            <div class="price-feature">✗ Certificates</div>
+                        </div>
+                        <button class="w-full bg-gray-100 text-black py-3 rounded-2xl font-semibold hover-lift">Get Started</button>
+                    </div>
+
+                    <!-- Professional Plan (Featured) -->
+                    <div class="pricing-card featured">
+                        <div class="badge-popular">Most Popular ⭐</div>
+                        <h3 class="text-3xl font-bold mb-3">Professional</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$19.99<span class="text-lg text-gray-600">/mo</span></p>
+                        <p class="text-gray-600 mb-8">Best for serious learners and career switchers</p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ Unlimited Courses (500+)</div>
+                            <div class="price-feature">✓ Unlimited AI Tutor Queries</div>
+                            <div class="price-feature">✓ Weekly Live Sessions</div>
+                            <div class="price-feature">✓ Professional Certificates</div>
+                            <div class="price-feature">✓ Advanced Analytics</div>
+                            <div class="price-feature">✓ Priority Email Support</div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-2xl font-semibold hover-lift">Start Free Trial</button>
+                    </div>
+
+                    <!-- Instructor Plan -->
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold mb-3">Instructor</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$49.99<span class="text-lg text-gray-600">/mo</span></p>
+                        <p class="text-gray-600 mb-8">For educators and content creators</p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ All Professional Features</div>
+                            <div class="price-feature">✓ Create & Publish Courses</div>
+                            <div class="price-feature">✓ Student Management Tools</div>
+                            <div class="price-feature">✓ Revenue Sharing (30%)</div>
+                            <div class="price-feature">✓ Marketing Support</div>
+                            <div class="price-feature">✓ Priority 24/7 Support</div>
+                        </div>
+                        <button class="w-full bg-gray-100 text-black py-3 rounded-2xl font-semibold hover-lift">Contact Sales</button>
+                    </div>
+                </div>
+
+                <!-- Billing Toggle -->
+                <div class="text-center mb-8 billing-card">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                        <div>
+                            <p class="text-sm uppercase tracking-wide text-blue-600 font-semibold mb-2">Annual savings</p>
+                            <p class="text-2xl font-bold">Save 30% when you choose annual billing</p>
+                        </div>
+                        <div class="flex items-center gap-4 justify-center">
+                            <span class="text-slate-600">Monthly</span>
+                            <button class="w-16 h-8 bg-blue-600 rounded-full relative cursor-pointer toggle-billing">
+                                <div class="w-7 h-7 bg-white rounded-full absolute left-1 top-0.5 transition-all"></div>
+                            </button>
+                            <span class="font-semibold text-blue-600">Annual plan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="px-8 py-20 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl font-bold mb-4">❓ Frequently Asked Questions</h2>
+                    <p class="text-gray-600">Got questions? We've got answers!</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">Is there a free trial?</h3>
+                        <p class="text-gray-600">Yes! All paid plans come with a 7-day free trial. No credit card required. You can cancel anytime.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">Can I switch plans anytime?</h3>
+                        <p class="text-gray-600">Absolutely! You can upgrade, downgrade, or cancel your plan at any time. Changes take effect immediately.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">Do you offer refunds?</h3>
+                        <p class="text-gray-600">If you're not satisfied within 14 days, we offer a full refund. No questions asked. We want you to love EduAI!</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">What payment methods do you accept?</h3>
+                        <p class="text-gray-600">We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and Apple Pay. Payments are secure with industry-standard encryption.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">Is there a student discount?</h3>
+                        <p class="text-gray-600">Yes! Valid students get 50% off our Professional plan. Verify your student status using your university email.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold mb-3">Do you offer team/enterprise plans?</h3>
+                        <p class="text-gray-600">Yes! For teams of 10+ or enterprises, we offer custom pricing and dedicated support. Contact our sales team at sales@eduai.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="px-8 py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">📊 Detailed Plan Comparison</h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-gray-300">
+                                <th class="text-left py-4 px-4 font-bold">Feature</th>
+                                <th class="text-center py-4 px-4 font-bold">Student</th>
+                                <th class="text-center py-4 px-4 font-bold bg-blue-50">Professional</th>
+                                <th class="text-center py-4 px-4 font-bold">Instructor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-semibold">Courses</td>
+                                <td class="text-center py-4 px-4">50+</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">500+</td>
+                                <td class="text-center py-4 px-4">500+</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-100">
+                                <td class="py-4 px-4 font-semibold">AI Tutor Queries</td>
+                                <td class="text-center py-4 px-4">5/day</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">Unlimited</td>
+                                <td class="text-center py-4 px-4">Unlimited</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-semibold">Live Sessions</td>
+                                <td class="text-center py-4 px-4">❌</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">✅ Weekly</td>
+                                <td class="text-center py-4 px-4">✅ Unlimited</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-100">
+                                <td class="py-4 px-4 font-semibold">Certificates</td>
+                                <td class="text-center py-4 px-4">❌</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">✅</td>
+                                <td class="text-center py-4 px-4">✅</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-semibold">Advanced Analytics</td>
+                                <td class="text-center py-4 px-4">❌</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">✅</td>
+                                <td class="text-center py-4 px-4">✅</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-100">
+                                <td class="py-4 px-4 font-semibold">Create Courses</td>
+                                <td class="text-center py-4 px-4">❌</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">❌</td>
+                                <td class="text-center py-4 px-4">✅</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-semibold">Revenue Sharing</td>
+                                <td class="text-center py-4 px-4">❌</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">❌</td>
+                                <td class="text-center py-4 px-4">✅ 30%</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="py-4 px-4 font-semibold">Support</td>
+                                <td class="text-center py-4 px-4">Community</td>
+                                <td class="text-center py-4 px-4 bg-blue-50">Priority Email</td>
+                                <td class="text-center py-4 px-4">24/7 Phone</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="page-cta px-8 py-20 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to Start Learning?</h2>
+                <p class="text-lg opacity-90 mb-8">Choose a plan and start your free 7-day trial today. No credit card required.</p>
+                <button class="px-8 py-4 bg-white text-blue-600 rounded-2xl font-semibold text-lg hover-lift">
+                    🚀 Start Your Free Trial
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white px-8 py-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">✨ EduAI</h3>
+                    <p class="text-gray-400">Empowering learners worldwide with AI-driven education. Making quality learning accessible, affordable, and effective for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="courses.html" class="hover:text-white transition">Browse Courses</a></p>
+                        <p><a href="courses.html" class="hover:text-white transition">For Students</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Certifications</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Career Paths</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teach</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="about.html" class="hover:text-white transition">Become an Instructor</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Teaching Resources</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Community</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Instructor Dashboard</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 support@eduai.com</p>
+                        <p>📱 1-800-EDU-AI-1</p>
+                        <p><a href="about.html" class="hover:text-white transition">Blog</a></p>
+                        <p><a href="contact.html" class="hover:text-white transition">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EduAI. All rights reserved. | Empowering education through artificial intelligence</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Billing toggle
+        const billingToggle = document.querySelector('.toggle-billing');
+        billingToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

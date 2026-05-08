@@ -1,0 +1,776 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAI - AI Powered Learning Platform</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-blue-600">✨ EduAI</h1>
+                <div class="flex gap-8 items-center">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="user.html" class="nav-link">Profile</a>
+                    <button class="btn-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="px-8 py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="hero-content">
+                    <div class="badge mb-4">🚀 Transform Your Learning Journey</div>
+                    <h1 class="text-5xl font-bold leading-tight mb-6">
+                        Master Any Subject with AI-Powered Personalization
+                    </h1>
+                    <p class="text-lg opacity-90 mb-8">
+                        EduAI combines cutting-edge artificial intelligence with proven teaching methods to create personalized learning experiences. Get instant feedback, adaptive learning paths, and expert guidance tailored specifically to your learning style and pace.
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="px-6 py-3 bg-white text-black rounded-2xl font-semibold hover-lift">
+                            🎯 Get Started Free
+                        </button>
+                        <button class="px-6 py-3 border border-white rounded-2xl hover-lift">
+                            ▶️ Watch Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=500&fit=crop" alt="AI Learning Platform">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-20 px-8 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl font-bold mb-4">🌟 Why Choose EduAI?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Our comprehensive platform features advanced AI technology designed to enhance learning outcomes, increase engagement, and make education more accessible for everyone.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3 class="text-xl font-bold mb-3">24/7 AI Tutor Support</h3>
+                        <p class="text-gray-600">Get instant answers to your questions, detailed concept explanations, step-by-step problem solutions, and personalized homework help available round the clock.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3 class="text-xl font-bold mb-3">Interactive Course Library</h3>
+                        <p class="text-gray-600">Access 500+ professionally-designed courses with HD video lessons, live instructor sessions, interactive coding labs, and real-world projects.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="text-xl font-bold mb-3">Advanced Analytics</h3>
+                        <p class="text-gray-600">Monitor detailed progress reports, identify learning gaps, track skill mastery, and receive AI-generated recommendations for improvement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❓</div>
+                        <h3 class="text-xl font-bold mb-3">Adaptive Assessments</h3>
+                        <p class="text-gray-600">AI-generated quizzes that adapt to your performance level, identifying weak areas and reinforcing concepts you've mastered.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3 class="text-xl font-bold mb-3">Gamified Learning</h3>
+                        <p class="text-gray-600">Earn badges, unlock achievements, maintain learning streaks, climb leaderboards, and stay motivated with our reward system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="text-xl font-bold mb-3">Community & Collaboration</h3>
+                        <p class="text-gray-600">Join study groups, participate in peer discussion forums, collaborate on projects, and learn from a community of thousands of learners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <section id="courses" class="bg-gray-50 py-20 px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-center mb-10">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-2">📚 Featured Courses</h2>
+                        <p class="text-gray-600">Explore our most popular courses designed by industry experts and recommended by AI based on your profile.</p>
+                    </div>
+                    <input placeholder="🔍 Search courses..." class="border rounded-2xl px-4 py-3 w-72" />
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Machine Learning">
+                        <h3 class="text-2xl font-bold mb-2">Machine Learning Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Master ML concepts including supervised learning, neural networks, and model optimization. Build 10+ real-world projects and deploy your first ML model.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="Web Development">
+                        <h3 class="text-2xl font-bold mb-2">Full Stack Web Development</h3>
+                        <p class="text-gray-600 mb-4">Learn frontend (React, Vue), backend (Node.js, Python), and databases. Create complete web applications and deploy them to production.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data Science">
+                        <h3 class="text-2xl font-bold mb-2">Data Science & Analytics</h3>
+                        <p class="text-gray-600 mb-4">Master data analysis, visualization, statistical modeling, and business intelligence. Work with real datasets and extract actionable insights.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop" alt="Cyber Security">
+                        <h3 class="text-2xl font-bold mb-2">Cyber Security Essentials</h3>
+                        <p class="text-gray-600 mb-4">Learn network security, cryptography, ethical hacking, and compliance. Get certified and prepare for industry-standard exams.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Mobile Development">
+                        <h3 class="text-2xl font-bold mb-2">Mobile App Development</h3>
+                        <p class="text-gray-600 mb-4">Build iOS and Android apps using Flutter and React Native. Publish your apps to app stores and reach millions of users.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="UI/UX Design">
+                        <h3 class="text-2xl font-bold mb-2">UI/UX Design Mastery</h3>
+                        <p class="text-gray-600 mb-4">Master design principles, prototyping, user research, and design systems. Build a professional portfolio and land design roles.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">⭐ 4.9 Rating</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="py-20 px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-10">
+                    <h2 class="text-4xl font-bold mb-3">📈 Student Dashboard</h2>
+                    <p class="text-gray-600">Personalized analytics and AI learning recommendations.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-4 gap-6 mb-10">
+                    <div class="stat-card">
+                        <h4 class="text-gray-500 mb-2">Active Enrollments</h4>
+                        <p class="text-4xl font-bold">1,250+</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="text-gray-500 mb-2">Total Study Hours</h4>
+                        <p class="text-4xl font-bold">245+</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="text-gray-500 mb-2">Certificates Earned</h4>
+                        <p class="text-4xl font-bold">18</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="text-gray-500 mb-2">Learning Streak</h4>
+                        <p class="text-4xl font-bold">47 Days</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 progress-section">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold">Learning Progress</h3>
+                            <button class="border px-4 py-2 rounded-xl">📅 Weekly</button>
+                        </div>
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Advanced Python Programming</span>
+                                    <span class="font-bold">92%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Web Development Bootcamp</span>
+                                    <span class="font-bold">78%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span>Data Analysis Fundamentals</span>
+                                    <span class="font-bold">56%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 56%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendations-section">
+                        <h3 class="text-2xl font-bold mb-6">💡 AI Recommendations</h3>
+                        <div class="space-y-4">
+                            <div class="recommendation-item">Complete Module 5 Quiz on Advanced Loops - Estimated time: 15 mins</div>
+                            <div class="recommendation-item">Review: You scored 85% on JSON parsing. Practice with 3 additional exercises</div>
+                            <div class="recommendation-item">New Recommendation: Start React Hooks course based on your progress</div>
+                            <div class="recommendation-item">Reminder: Your weekly study goal is 90% complete (9 of 10 hours done)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Chat -->
+        <section class="bg-gray-50 py-20 px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold mb-3">💬 AI-Powered Learning Assistant</h2>
+                    <p class="text-gray-600">Get instant help with your coursework. Our AI tutor understands concepts, explains complex topics, and helps you solve problems 24/7.</p>
+                </div>
+
+                <div class="chat-box">
+                    <div class="chat-container">
+                        <div class="chat-message user">Explain how neural networks work and why they're used in machine learning.</div>
+                        <div class="chat-message ai">Neural networks are computing systems inspired by biological neural networks. They consist of interconnected nodes (neurons) organized in layers. Here's why they're powerful:
+
+1. **Feature Learning**: Networks automatically discover patterns and features needed for classification
+2. **Non-linearity**: Hidden layers enable modeling of complex, non-linear relationships
+3. **Parallel Processing**: Multiple neurons process information simultaneously
+4. **Adaptability**: They improve through training using backpropagation
+
+They excel in image recognition, NLP, and time-series prediction where traditional ML falls short.</div>
+                    </div>
+                    <div class="chat-input">
+                        <input placeholder="Ask AI anything..." class="flex-1 rounded-2xl px-5 py-4 border" />
+                        <button class="bg-blue-600 text-white px-6 rounded-2xl hover-lift">📤 Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="py-20 px-8 bg-white">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">💳 Pricing Plans</h2>
+                <p class="text-gray-600 mb-14">Flexible pricing for students, teachers, and institutions.</p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold mb-3">Student</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$0<span class="text-lg text-gray-600">Free</span></p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ Limited Access to 50+ Courses</div>
+                            <div class="price-feature">✓ Basic AI Tutor (5 questions/day)</div>
+                            <div class="price-feature">✓ Community Discussion Forum</div>
+                        </div>
+                        <button class="w-full bg-gray-100 text-black py-3 rounded-2xl font-semibold hover-lift">Get Started</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="badge-popular">Most Popular ⭐</div>
+                        <h3 class="text-3xl font-bold mb-3">Professional</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$19.99<span class="text-lg text-gray-600">/mo</span></p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ Unlimited Course Access</div>
+                            <div class="price-feature">✓ Unlimited AI Tutor Queries</div>
+                            <div class="price-feature">✓ Certificate Programs</div>
+                            <div class="price-feature">✓ Live Weekly Sessions</div>
+                            <div class="price-feature">✓ Progress Analytics</div>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-2xl font-semibold hover-lift">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="text-3xl font-bold mb-3">Instructor</h3>
+                        <p class="text-5xl font-bold text-blue-600 mb-6">$49.99<span class="text-lg text-gray-600">/mo</span></p>
+                        <div class="space-y-4 mb-8">
+                            <div class="price-feature">✓ All Professional Features</div>
+                            <div class="price-feature">✓ Create & Publish Courses</div>
+                            <div class="price-feature">✓ Student Management Tools</div>
+                            <div class="price-feature">✓ Revenue Sharing (30%)</div>
+                            <div class="price-feature">✓ Priority Support</div>
+                        </div>
+                        <button class="w-full bg-gray-100 text-black py-3 rounded-2xl font-semibold hover-lift">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white px-8 py-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">✨ EduAI</h3>
+                    <p class="text-gray-400">Empowering learners worldwide with AI-driven education. Making quality learning accessible, affordable, and effective for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="#" class="hover:text-white">Browse Courses</a></p>
+                        <p><a href="#" class="hover:text-white">For Students</a></p>
+                        <p><a href="#" class="hover:text-white">Certifications</a></p>
+                        <p><a href="#" class="hover:text-white">Career Paths</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teach</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="#" class="hover:text-white">Become an Instructor</a></p>
+                        <p><a href="#" class="hover:text-white">Teaching Resources</a></p>
+                        <p><a href="#" class="hover:text-white">Community</a></p>
+                        <p><a href="#" class="hover:text-white">Instructor Dashboard</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 support@eduai.com</p>
+                        <p>📱 1-800-EDU-AI-1</p>
+                        <p><a href="#" class="hover:text-white">Blog</a></p>
+                        <p><a href="#" class="hover:text-white">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EduAI. All rights reserved. | Empowering education through artificial intelligence</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-4xl font-bold mb-4">Platform Features</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Everything students and teachers need in one intelligent platform.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">AI Tutor</h3>
+                    <p class="text-gray-600">Instant explanations, summaries, and homework support.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">Interactive Courses</h3>
+                    <p class="text-gray-600">Video lessons, live classes, and smart assignments.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">Analytics Dashboard</h3>
+                    <p class="text-gray-600">Track student progress using AI insights.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">Smart Quizzes</h3>
+                    <p class="text-gray-600">Auto-generated quizzes based on student level.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">Gamification</h3>
+                    <p class="text-gray-600">Points, achievements, and learning streaks.</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 mb-5"></div>
+                    <h3 class="text-xl font-bold mb-3">Collaborative Learning</h3>
+                    <p class="text-gray-600">Discussion rooms and team projects.</p>
+                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Page UI -->
+  <section id="courses" class="bg-white py-20 px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-center mb-10">
+        <div>
+          <h2 class="text-4xl font-bold mb-2">Popular Courses</h2>
+          <p class="text-gray-600">
+            Explore AI recommended learning paths.
+          </p>
+        </div>
+
+        <input
+          placeholder="Search courses..."
+          class="border rounded-2xl px-4 py-3 w-72"
+        />
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Machine Learning</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Data Science</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Cyber Security</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Mobile Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+                    <div class="h-44 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn with AI-generated exercises and real-world projects.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">4.9 Rating</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-xl">
+                                Enroll
+                            </button>
+                        </div>
+                    </div>
+                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="py-20 px-8 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-10">
+        <h2 class="text-4xl font-bold mb-3">Student Dashboard</h2>
+        <p class="text-gray-600">
+          Personalized analytics and AI learning recommendations.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-4 gap-6 mb-10">
+        {[
+          'Courses Enrolled',
+          'Hours Studied',
+          'Assignments Completed',
+          'AI Suggestions',
+        ].map((stat, index) => (
+          <div key={index} class="bg-white rounded-3xl p-6 shadow-md">
+            <h4 class="text-gray-500 mb-2">{stat}</h4>
+            <p class="text-4xl font-bold">{index * 12 + 24}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 bg-white rounded-3xl p-6 shadow-md">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold">Learning Progress</h3>
+            <button class="border px-4 py-2 rounded-xl">Weekly</button>
+          </div>
+
+          <div class="space-y-5">
+            {[
+              { course: 'Machine Learning', progress: '80%' },
+              { course: 'Data Science', progress: '65%' },
+              { course: 'UI/UX Design', progress: '40%' },
+            ].map(item, index) => 
+              <div key={index}>
+                <div class="flex justify-between mb-2">
+                  <span>{item.course}</span>
+                  <span>{item.progress}</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="bg-blue-600 h-3 rounded-full"
+                    style ={ width: item.progress }
+                  ></div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 shadow-md">
+          <h3 class="text-2xl font-bold mb-6">AI Recommendations</h3>
+
+          <div class="space-y-4">
+            {[
+              'Practice Python Loops',
+              'Watch Neural Networks Lesson',
+              'Complete UI Assignment',
+              'Revise SQL Queries',
+            ].map((task, index) => (
+              <div
+                key={index}
+                class="bg-gray-100 p-4 rounded-2xl"
+              >
+                {task}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat Page -->
+  <section class="bg-white py-20 px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold mb-3">AI Learning Assistant</h2>
+        <p class="text-gray-600">
+          Chat with AI to solve problems and understand concepts.
+        </p>
+      </div>
+
+      <div class="bg-gray-100 rounded-3xl p-6 shadow-lg">
+        <div class="space-y-4 mb-6 h-96 overflow-y-auto">
+          <div class="flex justify-end">
+            <div class="bg-blue-600 text-white p-4 rounded-2xl max-w-md">
+              Explain what Linear Regression means.
+            </div>
+          </div>
+
+          <div class="flex justify-start">
+            <div class="bg-white p-4 rounded-2xl max-w-md shadow">
+              Linear Regression is a machine learning algorithm used to
+              predict values based on relationships between variables.
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <input
+            placeholder="Ask AI anything..."
+            class="flex-1 rounded-2xl px-5 py-4 border"
+          />
+          <button class="bg-black text-white px-6 rounded-2xl">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teacher Panel -->
+  <section class="bg-gray-100 py-20 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-10">
+        <h2 class="text-4xl font-bold mb-3">Teacher Dashboard</h2>
+        <p class="text-gray-600">
+          Manage classrooms, assignments, and students.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-4 gap-6 mb-8">
+        {[
+          'Total Students',
+          'Assignments',
+          'Live Classes',
+          'Course Revenue',
+        ].map((item, index) => (
+          <div key={index} class="bg-white rounded-3xl p-6 shadow-md">
+            <p class="text-gray-500 mb-2">{item}</p>
+            <h3 class="text-4xl font-bold">{(index + 1) * 120}</h3>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 shadow-md overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="border-b">
+              <th class="py-4">Student</th>
+              <th>Course</th>
+              <th>Progress</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {[
+              ['Mohamed', 'Machine Learning', '78%', 'Active'],
+              ['Ali', 'Web Development', '55%', 'Pending'],
+              ['Sara', 'UI/UX Design', '92%', 'Excellent'],
+            ].map((student, index) => (
+              <tr key={index} class="border-b">
+                <td class="py-5">{student[0]}</td>
+                <td>{student[1]}</td>
+                <td>{student[2]}</td>
+                <td>
+                  <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                    {student[3]}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 px-8 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Pricing Plans</h2>
+      <p class="text-gray-600 mb-14">
+        Flexible pricing for students, teachers, and institutions.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          {
+            title: 'Basic',
+            price: '$9',
+            features: ['AI Chat', '3 Courses', 'Basic Analytics'],
+          },
+          {
+            title: 'Pro',
+            price: '$29',
+            features: ['Unlimited Courses', 'AI Tutor', 'Advanced Analytics'],
+          },
+          {
+            title: 'Enterprise',
+            price: '$99',
+            features: ['School Management', 'Custom AI', 'Team Access'],
+          },
+        ].map((plan, index) => (
+          <div
+            key={index}
+            class="rounded-3xl border p-8 hover:shadow-xl transition"
+          >
+            <h3 class="text-3xl font-bold mb-3">{plan.title}</h3>
+            <p class="text-5xl font-bold mb-6">{plan.price}</p>
+
+            <div class="space-y-4 mb-8">
+              {plan.features.map((feature, i) => (
+                <div key={i} class="bg-gray-100 p-3 rounded-xl">
+                  {feature}
+                </div>
+              ))}
+            </div>
+
+            <button class="w-full bg-black text-white py-3 rounded-2xl">
+              Choose Plan
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white px-8 py-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-4">EduAI</h3>
+        <p class="text-gray-400">
+          Smart AI platform for the future of education.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">Company</h4>
+        <div class="space-y-2 text-gray-400">
+          <p>About</p>
+          <p>Careers</p>
+          <p>Blog</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">Resources</h4>
+        <div class="space-y-2 text-gray-400">
+          <p>Documentation</p>
+          <p>Help Center</p>
+          <p>Support</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <div class="space-y-2 text-gray-400">
+          <p>support@eduai.com</p>
+          <p>+20 100 000 0000</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+

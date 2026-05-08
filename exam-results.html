@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results - Python Programming - EduAI Learning Platform</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">✨ EduAI</a>
+                <div class="flex gap-8 items-center nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="exams.html" class="nav-link">AI Exams</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="user.html" class="nav-link">Profile</a>
+                    <button class="btn-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                </div>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+
+        <!-- Exam Results Header -->
+        <section class="px-8 py-16 bg-gradient-to-r from-green-600 to-blue-700 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="text-8xl mb-6">🎉</div>
+                <h1 class="text-4xl font-bold mb-4">Congratulations!</h1>
+                <p class="text-xl opacity-90 mb-8">You completed the Python Programming Module Exam</p>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto">
+                    <div class="text-6xl font-bold mb-2">85%</div>
+                    <p class="text-lg">Your Score</p>
+                    <div class="flex justify-center gap-4 mt-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold">17/20</div>
+                            <div class="text-sm opacity-80">Correct Answers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold">15 min</div>
+                            <div class="text-sm opacity-80">Time Taken</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Results -->
+        <section class="px-8 py-12 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">📊 Detailed Results</h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Performance Breakdown -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-6">Performance Breakdown</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span>Python Fundamentals</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-24 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-600 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                    <span class="font-semibold">19/20</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Data Structures</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-24 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-600 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <span class="font-semibold">15/20</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Functions & OOP</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-24 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                    <span class="font-semibold">16/20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strengths & Weaknesses -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-6">Analysis</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                                <h4 class="font-semibold text-green-800">💪 Strengths</h4>
+                                <p class="text-green-700 text-sm">Excellent understanding of Python fundamentals and basic concepts.</p>
+                            </div>
+                            <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
+                                <h4 class="font-semibold text-yellow-800">🎯 Areas for Improvement</h4>
+                                <p class="text-yellow-700 text-sm">Data structures and advanced OOP concepts need more practice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Recommendations -->
+        <section class="px-8 py-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">🤖 AI-Powered Recommendations</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Based on your performance, our AI has analyzed your strengths and areas for improvement to recommend the best learning path forward.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <!-- Recommended Course -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h3 class="text-xl font-bold mb-3">Advanced Data Structures</h3>
+                        <p class="text-gray-600 mb-4">Deep dive into complex data structures and algorithms to strengthen your foundation.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-blue-600 font-semibold">Recommended Priority: High</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover-lift" onclick="enrollCourse('data-structures')">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                    <!-- Recommended Video -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">🎥</div>
+                        <h3 class="text-xl font-bold mb-3">OOP Concepts Explained</h3>
+                        <p class="text-gray-600 mb-4">Visual explanation of object-oriented programming principles with practical examples.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-green-600 font-semibold">Recommended Priority: Medium</span>
+                        </div>
+                        <button class="w-full bg-green-600 text-white py-2 rounded-lg hover-lift" onclick="watchVideo('oop-concepts')">
+                            Watch Now
+                        </button>
+                    </div>
+
+                    <!-- Practice Exercise -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">💻</div>
+                        <h3 class="text-xl font-bold mb-3">Data Structures Practice</h3>
+                        <p class="text-gray-600 mb-4">Interactive coding exercises to practice implementing various data structures.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-purple-600 font-semibold">Recommended Priority: High</span>
+                        </div>
+                        <button class="w-full bg-purple-600 text-white py-2 rounded-lg hover-lift" onclick="startPractice('data-structures')">
+                            Start Practice
+                        </button>
+                    </div>
+
+                    <!-- Related Course -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">🔗</div>
+                        <h3 class="text-xl font-bold mb-3">Algorithm Design</h3>
+                        <p class="text-gray-600 mb-4">Learn efficient algorithm design patterns and problem-solving techniques.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-orange-600 font-semibold">Recommended Priority: Medium</span>
+                        </div>
+                        <button class="w-full bg-orange-600 text-white py-2 rounded-lg hover-lift" onclick="enrollCourse('algorithms')">
+                            Explore Course
+                        </button>
+                    </div>
+
+                    <!-- Video Series -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">📺</div>
+                        <h3 class="text-xl font-bold mb-3">Python Best Practices</h3>
+                        <p class="text-gray-600 mb-4">Learn professional Python coding standards and best practices.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-teal-600 font-semibold">Recommended Priority: Low</span>
+                        </div>
+                        <button class="w-full bg-teal-600 text-white py-2 rounded-lg hover-lift" onclick="watchVideo('best-practices')">
+                            Watch Series
+                        </button>
+                    </div>
+
+                    <!-- Quiz Retake -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-4">🔄</div>
+                        <h3 class="text-xl font-bold mb-3">Review Weak Areas</h3>
+                        <p class="text-gray-600 mb-4">Retake quiz focusing on areas where you scored below 80%.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm text-red-600 font-semibold">Recommended Priority: High</span>
+                        </div>
+                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover-lift" onclick="retakeQuiz()">
+                            Retake Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Learning Path -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-6 text-center">🗺️ Your Recommended Learning Path</h3>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                        <div class="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-lg">
+                            <span class="text-blue-600 font-semibold">1</span>
+                            <span>Advanced Data Structures</span>
+                        </div>
+                        <span class="text-gray-400">→</span>
+                        <div class="flex items-center gap-2 bg-green-100 px-4 py-2 rounded-lg">
+                            <span class="text-green-600 font-semibold">2</span>
+                            <span>OOP Concepts Video</span>
+                        </div>
+                        <span class="text-gray-400">→</span>
+                        <div class="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-lg">
+                            <span class="text-purple-600 font-semibold">3</span>
+                            <span>Practice Exercises</span>
+                        </div>
+                        <span class="text-gray-400">→</span>
+                        <div class="flex items-center gap-2 bg-orange-100 px-4 py-2 rounded-lg">
+                            <span class="text-orange-600 font-semibold">4</span>
+                            <span>Algorithm Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actions -->
+        <section class="px-8 py-12 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">What would you like to do next?</h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover-lift" onclick="continueCourse()">
+                        Continue Course Learning
+                    </button>
+                    <button class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover-lift" onclick="viewCertificate()">
+                        View Certificate
+                    </button>
+                    <button class="bg-gray-600 text-white px-8 py-4 rounded-lg font-semibold hover-lift" onclick="shareResults()">
+                        Share Results
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white px-8 py-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">✨ EduAI</h3>
+                    <p class="text-gray-400">Empowering learners worldwide with AI-driven education. Making quality learning accessible, affordable, and effective for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="courses.html" class="hover:text-white transition">Browse Courses</a></p>
+                        <p><a href="exams.html" class="hover:text-white transition">Take Exams</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Certifications</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Career Paths</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teach</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="about.html" class="hover:text-white transition">Become an Instructor</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Teaching Resources</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Community</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Instructor Dashboard</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 support@eduai.com</p>
+                        <p>📱 1-800-EDU-AI-1</p>
+                        <p><a href="about.html" class="hover:text-white transition">Blog</a></p>
+                        <p><a href="contact.html" class="hover:text-white transition">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EduAI. All rights reserved. | Empowering education through artificial intelligence</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Action functions
+        function enrollCourse(courseId) {
+            alert(`Enrolling in ${courseId} course...`);
+            // Here you would redirect to course enrollment
+        }
+
+        function watchVideo(videoId) {
+            alert(`Playing ${videoId} video...`);
+            // Here you would open video player
+        }
+
+        function startPractice(practiceId) {
+            alert(`Starting ${practiceId} practice exercises...`);
+            // Here you would redirect to practice page
+        }
+
+        function retakeQuiz() {
+            alert('Redirecting to quiz retake...');
+            // Here you would redirect to quiz
+        }
+
+        function continueCourse() {
+            window.location.href = 'course-python.html';
+        }
+
+        function viewCertificate() {
+            alert('Certificate feature coming soon! 🏆');
+        }
+
+        function shareResults() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My Python Exam Results',
+                    text: 'I scored 85% on the Python Programming exam!',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Results link copied to clipboard!');
+                });
+            }
+        }
+    </script>
+</body>
+</html>

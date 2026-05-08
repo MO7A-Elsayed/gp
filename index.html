@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAI - AI Powered Learning Platform</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">✨ EduAI</a>
+                <div class="flex gap-8 items-center nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="exams.html" class="nav-link">AI Exams</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="user.html" class="nav-link">Profile</a>
+                    <button class="btn-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                </div>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="px-8 py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="hero-content">
+                    <div class="badge mb-4">🚀 Transform Your Learning Journey</div>
+                    <h1 class="text-5xl font-bold leading-tight mb-6">
+                        Master Any Subject with AI-Powered Personalization
+                    </h1>
+                    <p class="text-lg opacity-90 mb-8">
+                        EduAI combines cutting-edge artificial intelligence with proven teaching methods to create personalized learning experiences. Get instant feedback, adaptive learning paths, and expert guidance tailored specifically to your learning style and pace.
+                    </p>
+                    <div class="flex gap-4 flex-wrap">
+                        <button class="px-6 py-3 bg-white text-blue-600 rounded-2xl font-semibold hover-lift">
+                            🎯 Get Started Free
+                        </button>
+                        <button class="px-6 py-3 border border-white rounded-2xl hover-lift">
+                            ▶️ Watch Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=500&fit=crop&q=85" alt="AI Learning Platform" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 px-8 bg-white">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+                <div class="stats-item text-center">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">500K+</h3>
+                    <p class="text-gray-600">Active Learners</p>
+                </div>
+                <div class="stats-item text-center">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">500+</h3>
+                    <p class="text-gray-600">Expert Courses</p>
+                </div>
+                <div class="stats-item text-center">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">95%</h3>
+                    <p class="text-gray-600">Satisfaction Rate</p>
+                </div>
+                <div class="stats-item text-center">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">24/7</h3>
+                    <p class="text-gray-600">AI Support</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-20 px-8 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl font-bold mb-4">🌟 Why Choose EduAI?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Our comprehensive platform features advanced AI technology designed to enhance learning outcomes, increase engagement, and make education more accessible for everyone.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3 class="text-xl font-bold mb-3">24/7 AI Tutor Support</h3>
+                        <p class="text-gray-600">Get instant answers to your questions, detailed concept explanations, step-by-step problem solutions, and personalized homework help available round the clock.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎥</div>
+                        <h3 class="text-xl font-bold mb-3">Interactive Course Library</h3>
+                        <p class="text-gray-600">Access 500+ professionally-designed courses with HD video lessons, live instructor sessions, interactive coding labs, and real-world projects.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="text-xl font-bold mb-3">Advanced Analytics</h3>
+                        <p class="text-gray-600">Monitor detailed progress reports, identify learning gaps, track skill mastery, and receive AI-generated recommendations for improvement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❓</div>
+                        <h3 class="text-xl font-bold mb-3">Adaptive Assessments</h3>
+                        <p class="text-gray-600">AI-generated quizzes that adapt to your performance level, identifying weak areas and reinforcing concepts you've mastered.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3 class="text-xl font-bold mb-3">Gamified Learning</h3>
+                        <p class="text-gray-600">Earn badges, unlock achievements, maintain learning streaks, climb leaderboards, and stay motivated with our reward system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="text-xl font-bold mb-3">Community & Collaboration</h3>
+                        <p class="text-gray-600">Join study groups, participate in peer discussion forums, collaborate on projects, and learn from a community of thousands of learners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 px-8 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl font-bold mb-4">💬 What Our Learners Say</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Join thousands of satisfied students who've transformed their learning journey with EduAI</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-4">"EduAI's AI tutor helped me finally understand complex calculus concepts. The personalized approach made learning enjoyable!"</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&q=80" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <p class="font-semibold">Sarah Chen</p>
+                                <p class="text-sm text-gray-500">Mathematics Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-4">"As a working professional, EduAI's flexible learning paths let me upskill in web development without sacrificing my job."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&q=80" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <p class="font-semibold">Mark Johnson</p>
+                                <p class="text-sm text-gray-500">Career Switcher</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-600 mb-4">"The community features made learning fun. I found study partners, got help when stuck, and made real friends!"</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&q=80" alt="User" class="w-12 h-12 rounded-full">
+                            <div>
+                                <p class="font-semibold">Emma Rodriguez</p>
+                                <p class="text-sm text-gray-500">Data Science Learner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 px-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Learning?</h2>
+                <p class="text-lg opacity-90 mb-8">Start your free trial today. No credit card required. Get 7 days of unlimited access to all features.</p>
+                <button class="px-8 py-4 bg-white text-blue-600 rounded-2xl font-semibold text-lg hover-lift">
+                    🚀 Start Learning Now
+                </button>
+            </div>
+        </section>
+
+        <!-- Featured Courses Preview -->
+        <section class="py-20 px-8 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl font-bold mb-4">📚 Featured Courses</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Explore our most popular courses taught by industry experts. Check out all courses on our dedicated Courses page!</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&q=85" alt="Machine Learning" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Machine Learning Fundamentals</h3>
+                            <p class="text-gray-600 mb-4">Master ML concepts including supervised learning, neural networks, and model optimization. Build 10+ real-world projects and deploy your first ML model.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">⭐ 4.9 (1200 reviews)</span>
+                                <a href="courses.html" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&q=85" alt="Web Development" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Full Stack Web Development</h3>
+                            <p class="text-gray-600 mb-4">Learn frontend (React, Vue), backend (Node.js, Python), and databases. Create complete web applications and deploy them to production.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">⭐ 4.9 (950 reviews)</span>
+                                <a href="courses.html" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&q=85" alt="Data Science" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Data Science & Analytics</h3>
+                            <p class="text-gray-600 mb-4">Master data analysis, visualization, statistical modeling, and business intelligence. Work with real datasets and extract actionable insights.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">⭐ 4.8 (850 reviews)</span>
+                                <a href="courses.html" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover-lift">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="courses.html" class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-semibold text-lg hover-lift inline-block">View All Courses →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white px-8 py-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">✨ EduAI</h3>
+                    <p class="text-gray-400">Empowering learners worldwide with AI-driven education. Making quality learning accessible, affordable, and effective for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="courses.html" class="hover:text-white transition">Browse Courses</a></p>
+                        <p><a href="courses.html" class="hover:text-white transition">For Students</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Certifications</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Career Paths</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teach</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="about.html" class="hover:text-white transition">Become an Instructor</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Teaching Resources</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Community</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Instructor Dashboard</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 support@eduai.com</p>
+                        <p>📱 1-800-EDU-AI-1</p>
+                        <p><a href="about.html" class="hover:text-white transition">Blog</a></p>
+                        <p><a href="contact.html" class="hover:text-white transition">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EduAI. All rights reserved. | Empowering education through artificial intelligence</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

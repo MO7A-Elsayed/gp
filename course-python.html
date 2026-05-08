@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Masterclass - EduAI Learning Platform</title>
+    <link rel="stylesheet" href="gd.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">✨ EduAI</a>
+                <div class="flex gap-8 items-center nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="exams.html" class="nav-link">AI Exams</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="user.html" class="nav-link">Profile</a>
+                    <button class="btn-primary" onclick="window.location.href='signin.html'">Sign In</button>
+                </div>
+                <button class="hamburger" id="hamburger">☰</button>
+            </div>
+        </nav>
+
+        <!-- Course Header -->
+        <section class="px-8 py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center gap-6 mb-6">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop&q=85" alt="Python Programming" class="w-16 h-16 rounded-lg">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-2">Python Programming Masterclass</h1>
+                        <p class="text-lg opacity-90">Complete Python programming course from beginner to advanced</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        <span class="font-semibold">75% Complete</span>
+                    </div>
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        <span>Last accessed: 2 days ago</span>
+                    </div>
+                    <div class="bg-white/20 px-4 py-2 rounded-full">
+                        <span>12 hours remaining</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="px-8 py-12 bg-white">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8">
+                <!-- Course Curriculum -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-2xl font-bold mb-6">📚 Course Curriculum</h2>
+
+                    <!-- Module 1 -->
+                    <div class="course-module mb-6">
+                        <div class="module-header bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition" onclick="toggleModule('module1')">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold">Module 1: Python Fundamentals</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">4 lessons • 2h 30m</span>
+                                    <span class="text-green-600">✓</span>
+                                    <span id="module1-arrow" class="text-gray-400">▼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="module1-content" class="module-content pl-4 mt-2">
+                            <div class="lesson-item p-3 border-l-4 border-blue-500 bg-blue-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-green-600">✓</span>
+                                        <div>
+                                            <h4 class="font-medium">Introduction to Python</h4>
+                                            <p class="text-sm text-gray-600">Getting started with Python programming</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">15 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('intro-python')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-item p-3 border-l-4 border-blue-500 bg-blue-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-green-600">✓</span>
+                                        <div>
+                                            <h4 class="font-medium">Variables and Data Types</h4>
+                                            <p class="text-sm text-gray-600">Understanding Python data types</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">25 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('variables')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-item p-3 border-l-4 border-gray-300 bg-gray-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-blue-600">🔄</span>
+                                        <div>
+                                            <h4 class="font-medium">Control Flow Statements</h4>
+                                            <p class="text-sm text-gray-600">If-else, loops, and conditional logic</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">35 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('control-flow')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-item p-3 border-l-4 border-gray-300 bg-gray-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-gray-400">○</span>
+                                        <div>
+                                            <h4 class="font-medium">Functions and Modules</h4>
+                                            <p class="text-sm text-gray-600">Creating reusable code</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">40 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('functions')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="course-module mb-6">
+                        <div class="module-header bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition" onclick="toggleModule('module2')">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold">Module 2: Data Structures</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">5 lessons • 3h 15m</span>
+                                    <span class="text-blue-600">🔄</span>
+                                    <span id="module2-arrow" class="text-gray-400">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="module2-content" class="module-content pl-4 mt-2 hidden">
+                            <div class="lesson-item p-3 border-l-4 border-gray-300 bg-gray-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-gray-400">○</span>
+                                        <div>
+                                            <h4 class="font-medium">Lists and Tuples</h4>
+                                            <p class="text-sm text-gray-600">Working with sequences</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">30 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('lists-tuples')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lesson-item p-3 border-l-4 border-gray-300 bg-gray-50 mb-2 rounded-r-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-gray-400">○</span>
+                                        <div>
+                                            <h4 class="font-medium">Dictionaries and Sets</h4>
+                                            <p class="text-sm text-gray-600">Key-value data structures</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm text-gray-500">35 min</span>
+                                        <button class="text-blue-600 hover:text-blue-800" onclick="playVideo('dict-sets')">▶️ Watch</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="course-module mb-6">
+                        <div class="module-header bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition" onclick="toggleModule('module3')">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold">Module 3: Object-Oriented Programming</h3>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">6 lessons • 4h 20m</span>
+                                    <span class="text-gray-400">○</span>
+                                    <span id="module3-arrow" class="text-gray-400">▶</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="module3-content" class="module-content pl-4 mt-2 hidden">
+                            <!-- Lessons for Module 3 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Progress & Resources -->
+                <div>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h3 class="text-lg font-bold mb-4">📊 Your Progress</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
+                            <div class="bg-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">75% Complete • 12 hours remaining</p>
+
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm">Lessons Completed</span>
+                                <span class="text-sm font-semibold">15/20</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm">Quizzes Passed</span>
+                                <span class="text-sm font-semibold">8/12</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm">Assignments Done</span>
+                                <span class="text-sm font-semibold">3/5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                        <h3 class="text-lg font-bold mb-4">📁 Course Resources</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
+                                <span class="text-2xl">📄</span>
+                                <div>
+                                    <h4 class="font-medium">Python Cheat Sheet</h4>
+                                    <p class="text-sm text-gray-600">Quick reference guide</p>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-800 ml-auto">⬇️</button>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
+                                <span class="text-2xl">💻</span>
+                                <div>
+                                    <h4 class="font-medium">Code Examples</h4>
+                                    <p class="text-sm text-gray-600">Practice files</p>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-800 ml-auto">⬇️</button>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
+                                <span class="text-2xl">📚</span>
+                                <div>
+                                    <h4 class="font-medium">Additional Reading</h4>
+                                    <p class="text-sm text-gray-600">Recommended articles</p>
+                                </div>
+                                <button class="text-blue-600 hover:text-blue-800 ml-auto">📖</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-lg font-bold mb-4">🎯 Next Steps</h3>
+                        <button class="w-full bg-green-600 text-white py-3 rounded-lg mb-3 hover-lift" onclick="takeQuiz()">
+                            Take Module Quiz
+                        </button>
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover-lift" onclick="continueLearning()">
+                            Continue to Next Lesson
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Player Modal -->
+        <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50">
+            <div class="flex items-center justify-center min-h-screen p-4">
+                <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-hidden">
+                    <div class="flex items-center justify-between p-4 border-b">
+                        <h3 class="text-lg font-semibold" id="videoTitle">Video Title</h3>
+                        <button onclick="closeVideo()" class="text-gray-500 hover:text-gray-700">✕</button>
+                    </div>
+                    <div class="p-4">
+                        <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center mb-4">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🎥</div>
+                                <p class="text-gray-600">Video Player</p>
+                                <p class="text-sm text-gray-500 mt-2">This would play the actual video content</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover-lift" onclick="markComplete()">
+                                Mark as Complete
+                            </button>
+                            <button class="bg-gray-600 text-white px-6 py-2 rounded-lg hover-lift" onclick="closeVideo()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white px-8 py-12">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">✨ EduAI</h3>
+                    <p class="text-gray-400">Empowering learners worldwide with AI-driven education. Making quality learning accessible, affordable, and effective for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Learning</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="courses.html" class="hover:text-white transition">Browse Courses</a></p>
+                        <p><a href="exams.html" class="hover:text-white transition">Take Exams</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Certifications</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Career Paths</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teach</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><a href="about.html" class="hover:text-white transition">Become an Instructor</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Teaching Resources</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Community</a></p>
+                        <p><a href="about.html" class="hover:text-white transition">Instructor Dashboard</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 support@eduai.com</p>
+                        <p>📱 1-800-EDU-AI-1</p>
+                        <p><a href="about.html" class="hover:text-white transition">Blog</a></p>
+                        <p><a href="contact.html" class="hover:text-white transition">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 EduAI. All rights reserved. | Empowering education through artificial intelligence</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Module toggle functionality
+        function toggleModule(moduleId) {
+            const content = document.getElementById(moduleId + '-content');
+            const arrow = document.getElementById(moduleId + '-arrow');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                arrow.textContent = '▼';
+            } else {
+                content.classList.add('hidden');
+                arrow.textContent = '▶';
+            }
+        }
+
+        // Video player functionality
+        function playVideo(videoId) {
+            const modal = document.getElementById('videoModal');
+            const title = document.getElementById('videoTitle');
+
+            // Set video title based on videoId
+            const titles = {
+                'intro-python': 'Introduction to Python',
+                'variables': 'Variables and Data Types',
+                'control-flow': 'Control Flow Statements',
+                'functions': 'Functions and Modules',
+                'lists-tuples': 'Lists and Tuples',
+                'dict-sets': 'Dictionaries and Sets'
+            };
+
+            title.textContent = titles[videoId] || 'Video Content';
+            modal.classList.remove('hidden');
+        }
+
+        function closeVideo() {
+            const modal = document.getElementById('videoModal');
+            modal.classList.add('hidden');
+        }
+
+        function markComplete() {
+            alert('Lesson marked as complete! 🎉');
+            closeVideo();
+            // Here you would update progress and move to next lesson
+        }
+
+        function takeQuiz() {
+            window.location.href = 'exam-results.html';
+        }
+
+        function continueLearning() {
+            alert('Continuing to next lesson...');
+            // Here you would navigate to the next lesson
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('videoModal').addEventListener('click', (e) => {
+            if (e.target.id === 'videoModal') {
+                closeVideo();
+            }
+        });
+    </script>
+</body>
+</html>
